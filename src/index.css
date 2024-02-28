@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 body {
-  background-color: #2bcc339b;
-  color: aliceblue;
+  /* background-color: #04d404b4; */
+
+  background-color: #04d404;
+  background-image: url("./assets/fondo-01.svg");
+  background-size: 99vw; /* Establece el ancho al 50% del ancho de la ventana y la altura al 50% de la altura de la ventana */
 }
