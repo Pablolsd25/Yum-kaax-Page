@@ -7,5 +7,11 @@ body {
 
   background-color: #04d404;
   background-image: url("./assets/fondo-01.svg");
-  background-size: 99vw; /* Establece el ancho al 50% del ancho de la ventana y la altura al 50% de la altura de la ventana */
+  background-size: 100vw; /* Establece el ancho al 50% del ancho de la ventana y la altura al 50% de la altura de la ventana */
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-size: 300dvh;
+  }
 }
