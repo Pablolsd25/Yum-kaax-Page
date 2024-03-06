@@ -2,9 +2,9 @@ import { FaHome, FaShoppingCart, FaInfoCircle, FaPhone } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="bg-yellow-200 shadow-md mb-4 mt-4 ml-4 mr-4 mls rounded">
+    <nav className="bg-yellow-200 shadow-md mb-4 mt-4 ml-4 mr-4 rounded">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-10">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="text-orange-600 text-lg font-semibold">

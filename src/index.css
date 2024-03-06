@@ -5,7 +5,7 @@
 body {
   /* background-color: #04d404b4; */
 
-  background-color: #04d404;
+  background-color: #01ac01;
   background-image: url("./assets/fondo-01.svg");
   background-size: 100vw; /* Establece el ancho al 50% del ancho de la ventana y la altura al 50% de la altura de la ventana */
 }
