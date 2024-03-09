@@ -36,7 +36,7 @@ function ProductPages() {
           </p>
           <p className="text-gray-700">12 cigarrillos: $60</p>
           <p className="text-gray-700">18 cigarrillos: $70</p>
-        </CardTemplate>
+        </CardTemplate>c
         <CardTemplate className="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
           <img
             src="https://consumaconciencia.com/wp-content/uploads/2023/10/100100001.png"
