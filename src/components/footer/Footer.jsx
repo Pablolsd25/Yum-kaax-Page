@@ -12,7 +12,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="text-orange-600 mx-2 hover:text-blue-500"
         >
-          <FaFacebook className="h-6 w-6" />
+          <FaFacebook className="h-5 w-5" />
         </a>
 
         {/* Icono de WhatsApp */}
@@ -22,7 +22,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="text-orange-600 mx-2 hover:text-green-500"
         >
-          <FaWhatsapp className="h-6 w-6" />
+          <FaWhatsapp className="h-5 w-5" />
         </a>
 
         {/* Icono de Instagram */}
@@ -32,7 +32,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="text-orange-600 mx-2 hover:text-pink-500"
         >
-          <FaInstagram className="h-6 w-6" />
+          <FaInstagram className="h-5 w-5" />
         </a>
       </div>
     </footer>
