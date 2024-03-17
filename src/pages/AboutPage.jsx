@@ -1,5 +1,5 @@
 import Container from "../components/ui/Container";
-import Card, { CardTemplate } from "../components/ui/CardTemplate";
+import { CardTemplate } from "../components/ui/CardTemplate";
 function AboutPage() {
   return (
     <Container>
