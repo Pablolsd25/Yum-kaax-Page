@@ -1,58 +1,74 @@
 import Container from "../components/ui/Container";
 import CardTemplate from "../components/ui/CardTemplate";
 
+const products = [
+  {
+    id: 1,
+    name: "Mezcla Herbal",
+    description:
+      "Descripción: 100% natural, cigarro herbal hecho a base de manzanilla, lavanda y hierba buena.",
+    prices: [
+      { quantity: "Caja de 12 cigarrillos", price: "$50" },
+      { quantity: "Caja de 18 cigarrillos", price: "$60" },
+    ],
+    image:
+      "https://consumaconciencia.com/wp-content/uploads/2023/10/100100001.png",
+  },
+  {
+    id: 2,
+    name: "Mezcla Herbal con pétalos de rosa",
+    description:
+      "Descripción: 100% natural, cigarro herbal hecho a base de manzanilla, lavanda, hierba buena y pétalos de rosa.",
+    prices: [
+      { quantity: "12 cigarrillos", price: "$60" },
+      { quantity: "18 cigarrillos", price: "$70" },
+    ],
+    image:
+      "https://consumaconciencia.com/wp-content/uploads/2023/10/100100001.png",
+  },
+  {
+    id: 3,
+    name: "Combinados",
+    description:
+      "Descripción: 100% natural, cigarro herbal hecho a base de manzanilla, lavanda, hierba buena y pétalos de rosa.",
+    prices: [
+      { quantity: "12 cigarrillos", price: "$65" },
+      { quantity: "18 cigarrillos", price: "$75" },
+    ],
+    image:
+      "https://consumaconciencia.com/wp-content/uploads/2023/10/100100001.png",
+  },
+];
+
 function ProductPages() {
   return (
     <Container>
       <div className="grid gap-6 md:grid-cols-3">
-        <CardTemplate className="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
-          <img
-            src="https://consumaconciencia.com/wp-content/uploads/2023/10/100100001.png"
-            alt="Imagen 1"
-            className="w-40 h-auto mx-auto mb-4 rounded-full"
-          />
-          <h2 className="text-orange-600 text-3xl font-semibold mb-4">
-            Mezcla Herbal
-          </h2>
-          <p className="text-gray-700 mb-2">
-            Descripción: 100% natural, cigarro herbal hecho a base de
-            manzanilla, lavanda y hierba buena.
-          </p>
-          <p className="text-gray-700">Caja de 12 cigarrillos: $50</p>
-          <p className="text-gray-700">Caja de 18 cigarrillos: $60</p>
-        </CardTemplate>
-        <CardTemplate className="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
-          <img
-            src="https://consumaconciencia.com/wp-content/uploads/2023/10/100100001.png"
-            alt="Imagen 2"
-            className="w-40 h-auto mx-auto mb-4 rounded-full"
-          />
-          <h2 className="text-orange-600 text-3xl font-semibold mb-4">
-            Mezcla Herbal con pétalos de rosa
-          </h2>
-          <p className="text-gray-700 mb-2">
-            Descripción: 100% natural, cigarro herbal hecho a base de
-            manzanilla, lavanda, hierba buena y pétalos de rosa.
-          </p>
-          <p className="text-gray-700">12 cigarrillos: $60</p>
-          <p className="text-gray-700">18 cigarrillos: $70</p>
-        </CardTemplate>
-        <CardTemplate className="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
-          <img
-            src="https://consumaconciencia.com/wp-content/uploads/2023/10/100100001.png"
-            alt="Imagen 3"
-            className="w-40 h-auto mx-auto mb-4 rounded-full"
-          />
-          <h2 className="text-orange-600 text-3xl font-semibold mb-4">
-            Combinados
-          </h2>
-          <p className="text-gray-700 mb-2">
-            Descripción: 100% natural, cigarro herbal hecho a base de
-            manzanilla, lavanda, hierba buena y pétalos de rosa.
-          </p>
-          <p className="text-gray-700">12 cigarrillos: $65</p>
-          <p className="text-gray-700">18 cigarrillos: $75</p>
-        </CardTemplate>
+        {products.map((product) => (
+          <CardTemplate
+            key={product.id}
+            className="bg-white rounded-lg shadow-lg p-4 flex"
+          >
+            <img
+              src={product.image}
+              alt={`Imagen ${product.id}`}
+              className="w-full h-auto rounded-lg"
+            />
+            <div className="ml-4">
+              <h2 className="text-orange-600 text-lg font-semibold mb-2">
+                {product.name}
+              </h2>
+              <p className="text-gray-700 text-sm mb-2">
+                {product.description}
+              </p>
+              {product.prices.map((item, index) => (
+                <p key={index} className="text-gray-700 text-sm">
+                  {item.quantity}: {item.price}
+                </p>
+              ))}
+            </div>
+          </CardTemplate>
+        ))}
       </div>
     </Container>
   );

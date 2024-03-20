@@ -36,12 +36,20 @@ function App() {
         {/* Agrega espacio en la parte superior */}
         <Container className="py-5">
           <Home id="inicio" />
+          <div className="mb-8"></div>{" "}
+          {/* Agrega un espacio entre los componentes */}
           <ProductPages id="productos" />
+          <div className="mb-8"></div>{" "}
+          {/* Agrega un espacio entre los componentes */}
           <AboutPage id="acerca" />
+          <div className="mb-8"></div>{" "}
+          {/* Agrega un espacio entre los componentes */}
           <ContactPage id="contacto" />
         </Container>
       </div>
-      <Footer />
+      <div className="mb-8">
+        <Footer />
+      </div>
     </>
   );
 }

@@ -20,7 +20,7 @@ function ContactPage() {
             <a href="mailto:info@example.com" className="text-blue-600">
               info@example.com
             </a>
-            .
+            
           </p>
           <p className="text-gray-700 text-lg mb-8">
             También puedes encontrarnos en nuestras redes sociales. ¡Síguenos
