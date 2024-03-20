@@ -45,10 +45,9 @@ function App() {
           <div className="mb-8"></div>{" "}
           {/* Agrega un espacio entre los componentes */}
           <ContactPage id="contacto" />
+          <div className="mt-8"></div>
+          <Footer />
         </Container>
-      </div>
-      <div className="mb-8">
-        <Footer />
       </div>
     </>
   );
